@@ -1,10 +1,21 @@
 package com.example.Assignment1Registration.model;
 
+
 public class Student {
     private String name;
     private String email;
     private String course;
     private String level;
+    private String year;
+
+
+    public String getYear(){
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
 
     public Student() {}
 
@@ -15,7 +26,6 @@ public class Student {
         this.level = level;
     }
 
-    // Getters and setters
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 

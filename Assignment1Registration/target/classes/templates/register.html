@@ -22,11 +22,13 @@
         <label>Course:</label>
         <select th:field="*{course}" required>
             <option value="" disabled selected>Select course</option>
-            <option value="Math101">Math 101</option>
-            <option value="CS101">CS 101</option>
-            <option value="Eng202">English 202</option>
+            <option value="Computer Programming">Computer Programming</option>
+            <option value="Kinesiology">Kinesiology</option>
+            <option value="Psychology">Psychology</option>
+            <option value="Engineering">Engineering</option>
         </select><br/>
 
+        <!-- ✅ Required by the assignment -->
         <label>Level:</label>
         <select th:field="*{level}" required>
             <option value="" disabled selected>Select level</option>
@@ -34,10 +36,23 @@
             <option value="Graduate">Graduate</option>
         </select><br/>
 
+        <!-- ✅ Optional field -->
+        <label>Year:</label>
+        <select th:field="*{year}">
+            <option value="" disabled selected>Select year</option>
+            <option value="Year 1">Year 1</option>
+            <option value="Year 2">Year 2</option>
+            <option value="Year 3">Year 3</option>
+            <option value="Year 4">Year 4</option>
+            <option value="Graduated">Graduated</option>
+        </select><br/>
+
+
         <div class="button-wrapper">
             <button type="submit">Register</button>
         </div>
     </form>
+
 </div>
 
 </body>
