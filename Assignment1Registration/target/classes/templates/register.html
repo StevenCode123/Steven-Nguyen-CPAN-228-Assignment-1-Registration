@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Course Registration</title>
+    <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body>
+<div class="header">
+    <h2>Steven Nguyen - N01564533</h2>
+    <h1>Course Registration</h1>
+</div>
+
+<div class="container">
+    <form th:action="@{/register}" th:object="${student}" method="post">
+
+        <label>Name:</label>
+        <input type="text" th:field="*{name}" required><br/>
+
+        <label>Email:</label>
+        <input type="email" th:field="*{email}" required><br/>
+
+        <label>Course:</label>
+        <select th:field="*{course}" required>
+            <option value="" disabled selected>Select course</option>
+            <option value="Math101">Math 101</option>
+            <option value="CS101">CS 101</option>
+            <option value="Eng202">English 202</option>
+        </select><br/>
+
+        <label>Level:</label>
+        <select th:field="*{level}" required>
+            <option value="" disabled selected>Select level</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="Graduate">Graduate</option>
+        </select><br/>
+
+        <div class="button-wrapper">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
