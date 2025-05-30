@@ -1,4 +1,5 @@
 Steven Nguyen - N01564533
+CPAN-228
 # Assignment1Registration App
 
 This is a simple Spring Boot application for course registration using Spring MVC and Thymeleaf by yours truly.
