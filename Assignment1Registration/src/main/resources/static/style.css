@@ -52,7 +52,6 @@ input, select {
     border-radius: 5px;
 }
 
-/* Center button wrapper */
 .button-wrapper {
     display: flex;
     justify-content: center;
