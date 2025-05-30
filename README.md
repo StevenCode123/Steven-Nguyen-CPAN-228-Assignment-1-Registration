@@ -1,4 +1,4 @@
-Steven Nguyen - N01564533
+Steven Nguyen
 CPAN-228
 # Assignment1Registration App
 
