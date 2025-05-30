@@ -35,4 +35,4 @@ This is a simple Spring Boot application for course registration using Spring MV
   ./mvnw spring-boot:run
   ```
 
-4. **Access the application in your local browser: "http://localhost:8080/register" or "http://localhost:8080/confirmation".**
+4. **Access the application in your local browser: "http://localhost:8080/register"
